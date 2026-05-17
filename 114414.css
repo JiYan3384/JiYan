@@ -1,0 +1,83 @@
+/* 基础重置 */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 导航 */
+nav {
+  position: sticky; top: 0;
+  background: #fff;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 1px 6px rgba(0,0,0,.08);
+}
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { text-decoration: none; color: #333; }
+
+/* 首屏 */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg,#4f8ef7,#2b5ea8);
+  color: #fff;
+}
+.avatar {
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 4px solid #fff;
+}
+.subtitle { margin: 10px 0 24px; opacity: .9; }
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  border-radius: 999px;
+  background: #fff;
+  color: #2b5ea8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* 通用区块 */
+.section {
+  max-width: 960px;
+  margin: auto;
+  padding: 60px 20px;
+}
+.dark { background: #f5f7fa; }
+
+/* 技能标签 */
+.tags {
+  display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 16px;
+}
+.tags li {
+  list-style: none;
+  background: #eef2ff;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* 卡片 */
+.cards { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 16px; }
+.card {
+  flex: 1 1 220px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.06);
+}
+
+/* 页脚 */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #aaa;
+  font-size: 14px;
+}
